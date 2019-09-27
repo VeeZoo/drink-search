@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Include the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Find a Drink Recipe</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Find a Drink Recipe</h1>
+    </header>
+
+    <main>
+
+      <form id="search-form" class="">
+        <input id="search-field" type="text" name="search-term" placeholder="Enter a search term..." />
+        <button id="search-button" type="submit">Search</button>
+		<button id="search-again-button" type="submit" class="hidden">Search Again</button>
+      </form>
+
+	  <div id="results" class="results-container hidden"></div>
+
+    </main>
+
+	<footer>
+      <p>© 2019 VeeZoo</p>
+    </footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,142 @@
+body {
+	background-color: #F2F2F2;
+	color: #494949;
+	font-family: 'Noto Sans', Verdana, Arial, sans-serif;
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+header {
+	background-color: #036;
+    border-bottom: 2px solid #fcba19;
+    color: #fff;
+    display: flex;
+	width: 100%;
+}
+
+header h1 {
+	margin: 20px;
+	font-weight: normal;
+}
+
+main {
+	flex: 1;
+}
+
+form {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s ease, opacity 1s ease;
+	display: flex;
+	flex: 1;
+	flex-wrap: no-wrap;
+	align-items: center;
+	justify-content: center;
+	margin: 50px;
+}
+
+footer {
+	background-color: #036;
+	border-top: 2px solid #fcba19;
+    color: #fff;
+	width: 100%;
+}
+
+footer p {
+	margin: 20px;
+}
+
+.hidden {
+	display: none;
+}
+
+.fade {
+	visibility: hidden;
+	opacity: 0;
+}
+
+form input {
+	min-width: 200px;
+	height: 38px;
+	font-family: 'Noto Sans', Verdana, Arial, sans-serif;
+	font-size: 18px;
+	border-radius: 4px;
+	border: 2px solid #606060;
+	padding: 5px;
+}
+
+form input:focus {
+	border-color: #036;
+}
+
+button {
+	border-radius: 4px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-family: 'Noto Sans', Verdana, Arial, sans-serif;
+	font-size: 18px;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	height: 50px;
+	box-sizing: border-box;
+	margin: 1em;
+	background-color: #003366;
+	border: none;
+	color: white;
+	transition: opacity 0.5s ease;
+}
+
+button:hover {
+    opacity: 0.80;
+}
+
+#search-again-button {
+	position: relative;
+	right: 120px;
+}
+
+::placeholder {
+    color: s#808080;
+}
+
+.results-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.drink {
+	width: 360px;
+	margin: 20px;
+	padding: 20px;
+	color: #FFFFFF;
+	background-color: #385A8A;
+}
+
+.drink img {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+.drink h1, .drink h4 {
+	text-align: center;
+}
+
+.ingredients {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.list {
+	justify-content: space-evenly;
+}
+
+.list ul {
+	list-style: none;
+}
